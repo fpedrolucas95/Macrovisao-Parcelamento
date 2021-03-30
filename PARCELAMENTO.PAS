@@ -1,8 +1,6 @@
-{ATEN«√O: Esta rotina ainda est· em desenvolvimento.
-          O cÛdigo gerado pode apresentar incorreÁıes sint·ticas. }
 program Parcelamento;
 uses Crt;
-// { Vers„o : 1.0}
+// { Vers√£o : 1.0}
 // { Data atual  : 30/03/2021}
 Var
 valor, parcela, total, prazo: real;
@@ -10,32 +8,32 @@ forma, novo: integer;
 
 begin
    repeat
-   writeln('----------------- Hospital de Olhos Macrovis„o -----------------');
+   writeln('----------------- Hospital de Olhos Macrovis√£o -----------------');
    writeln('');
-   writeln('       Sistema autom·tico de calculo de juros, vers„o 1.0       ');
+   writeln('       Sistema autom√°tico de calculo de juros, vers√£o 1.0       ');
    writeln('              Para uso exclusivo na maquina KREDITO             ');
    writeln('');
    write('Digite o valor do procedimento: R$');
    readln(valor);
-   write('Esse pagamento ser· no crÈdito ou dÈbito? (1-cred, 2-deb): ');
+   write('Esse pagamento ser√° no cr√©dito ou d√©bito? (1-cred, 2-deb): ');
    readln(forma);
    if (forma = 1) then begin
    write('Digite a quantidade de parcelas (1-18): ');
    readln(parcela);
    if (parcela = 1) then begin
    total := valor+(valor*0.0297);
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a vista (');
+   write(' no cr√©dito a vista (');
    write(parcela);
    writeln('x )');
    end;
    if (parcela = 2) then begin
    total := valor+(valor*0.0360);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -43,9 +41,9 @@ begin
    if (parcela = 3) then begin
    total := valor+(valor*0.0394);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -53,9 +51,9 @@ begin
    if (parcela = 4) then begin
    total := valor+(valor*0.0427);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -63,9 +61,9 @@ begin
    if (parcela = 5) then begin
    total := valor+(valor*0.0460);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -73,9 +71,9 @@ begin
    if (parcela = 6) then begin
    total := valor+(valor*0.0493);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -83,9 +81,9 @@ begin
    if (parcela = 7) then begin
    total := valor+(valor*0.0584);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -93,9 +91,9 @@ begin
    if (parcela = 8) then begin
    total := valor+(valor*0.0617);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -103,9 +101,9 @@ begin
    if (parcela = 9) then begin
    total := valor+(valor*0.0649);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -113,9 +111,9 @@ begin
    if (parcela = 10) then begin
    total := valor+(valor*0.0682);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -123,9 +121,9 @@ begin
    if (parcela = 11) then begin
    total := valor+(valor*0.0714);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -133,9 +131,9 @@ begin
    if (parcela = 12) then begin
    total := valor+(valor*0.0745);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -143,9 +141,9 @@ begin
    if (parcela = 13) then begin
    total := valor+(valor*0.0896);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -153,9 +151,9 @@ begin
    if (parcela = 14) then begin
    total := valor+(valor*0.0925);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -163,9 +161,9 @@ begin
    if (parcela = 15) then begin
    total := valor+(valor*0.0964);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -173,9 +171,9 @@ begin
    if (parcela = 16) then begin
    total := valor+(valor*0.1000);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -183,9 +181,9 @@ begin
    if (parcela = 17) then begin
    total := valor+(valor*0.1050);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -193,9 +191,9 @@ begin
    if (parcela = 18) then begin
    total := valor+(valor*0.1120);
    prazo := total / parcela;
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no crÈdito a prazo em (');
+   write(' no cr√©dito a prazo em (');
    write(parcela);
    write('x ) de R$');
    write(prazo);
@@ -203,12 +201,12 @@ begin
    end;
    if (forma = 2) then begin
    total := valor+(valor*0.0140);
-   write('O valor a ser pago È R$');
+   write('O valor a ser pago √© R$');
    write(total);
-   write(' no dÈbito a vista.');
+   write(' no d√©bito a vista.');
    end;
    writeln('');
-   write('Deseja fazer um novo calculo? 1-SIM, 2-N√O: ');
+   write('Deseja fazer um novo calculo? 1-SIM, 2-N√ÉO: ');
    readln(novo);
    ClrScr;
    until (novo=2);
