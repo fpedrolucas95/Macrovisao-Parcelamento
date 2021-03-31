@@ -1,7 +1,7 @@
 program Parcelamento;
 uses Crt;
-// { Versão : 1.0}
-// { Data atual  : 30/03/2021}
+// { Versão : 1.02}
+// { Data atual  : 31/03/2021}
 Var
 valor, parcela, total, prazo: real;
 forma, novo: integer;
@@ -10,8 +10,8 @@ begin
    repeat
    writeln('--------------------- Hospital de Olhos Macrovisão ---------------------');
    writeln('');
-   writeln('           Sistema automático de calculo de juros, versão 1.0           ');
-   writeln('                 Para uso exclusivo na maquina KREDITO                  ');
+   writeln('          Sistema automático de calculo de juros, versão 1.02          ');
+   writeln('                 Para uso exclusivo na maquina KREDIT                  ');
    writeln('');
    writeln('Como usar:');
    writeln('Digite o valor do procedimento (somente números)');
