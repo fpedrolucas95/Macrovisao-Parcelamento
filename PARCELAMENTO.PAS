@@ -3,7 +3,7 @@ uses Crt;
 // { Versão : 1.03}
 // { Data atual  : 31/03/2021}
 Var
-valor, parcela, total, prazo, mv: real;
+valor, parcela, total, prazo: real;
 forma, novo: integer;
 
 begin
