@@ -1,6 +1,6 @@
 program Parcelamento;
 uses Crt;
-// { Versão : 1.02}
+// { Versão : 1.03}
 // { Data atual  : 31/03/2021}
 Var
 valor, parcela, total, prazo: real;
@@ -30,7 +30,8 @@ begin
    total := valor+(valor*0.0297);
    write('O valor a ser pago é R$');
    write(total:4:2);
-   write(' no crédito a vista');
+   writeln(' no crédito a vista');
+   write('A taxa de juros desta transação é de 2.97%');
    end;
    if (parcela = 2) then begin
    total := valor+(valor*0.0360);
@@ -40,7 +41,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:1:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 3.60%');
    end;
    if (parcela = 3) then begin
    total := valor+(valor*0.0394);
@@ -50,7 +52,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:1:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 3.94%');
    end;
    if (parcela = 4) then begin
    total := valor+(valor*0.0427);
@@ -60,7 +63,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:1:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 4.27%');
    end;
    if (parcela = 5) then begin
    total := valor+(valor*0.0460);
@@ -70,7 +74,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:1:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 4.60%');
    end;
    if (parcela = 6) then begin
    total := valor+(valor*0.0493);
@@ -80,7 +85,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:1:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 4.93%');
    end;
    if (parcela = 7) then begin
    total := valor+(valor*0.0584);
@@ -90,7 +96,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:1:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 5.84%');
    end;
    if (parcela = 8) then begin
    total := valor+(valor*0.0617);
@@ -100,7 +107,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:1:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 6.17%');
    end;
    if (parcela = 9) then begin
    total := valor+(valor*0.0649);
@@ -110,7 +118,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:1:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 6.49%');
    end;
    if (parcela = 10) then begin
    total := valor+(valor*0.0682);
@@ -120,7 +129,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:2:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 6.82%');
    end;
    if (parcela = 11) then begin
    total := valor+(valor*0.0714);
@@ -130,7 +140,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:2:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 7.14%');
    end;
    if (parcela = 12) then begin
    total := valor+(valor*0.0745);
@@ -140,7 +151,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:2:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 7.45%');
    end;
    if (parcela = 13) then begin
    total := valor+(valor*0.0896);
@@ -150,7 +162,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:2:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 8.96%');
    end;
    if (parcela = 14) then begin
    total := valor+(valor*0.0925);
@@ -160,7 +173,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:2:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 9.25%');
    end;
    if (parcela = 15) then begin
    total := valor+(valor*0.0964);
@@ -170,7 +184,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:2:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 9.64%');
    end;
    if (parcela = 16) then begin
    total := valor+(valor*0.1000);
@@ -180,7 +195,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:2:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 10%');
    end;
    if (parcela = 17) then begin
    total := valor+(valor*0.1050);
@@ -190,7 +206,8 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:2:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 10.50%');
    end;
    if (parcela = 18) then begin
    total := valor+(valor*0.1120);
@@ -200,14 +217,16 @@ begin
    write(' no crédito a prazo em ( ');
    write(parcela:2:0);
    write('x ) de R$');
-   write(prazo:4:2);
+   writeln(prazo:4:2);
+   write('A taxa de juros desta transação é de 11.20%');
    end;
    end;
    if (forma = 2) then begin
    total := valor+(valor*0.0140);
    write('O valor a ser pago é R$');
    write(total:4:2);
-   write(' no débito a vista.');
+   writeln(' no débito a vista.');
+   write('A taxa de juros desta transação é de 1.40%');
    end;
    writeln('');
    write('Deseja fazer um novo calculo? 1-SIM, 2-NÃO: ');
