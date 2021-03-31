@@ -11,7 +11,7 @@ begin
    writeln('--------------------- Hospital de Olhos Macrovisão ---------------------');
    writeln('');
    writeln('          Sistema automático de calculo de juros, versão 1.03          ');
-   writeln('                 Para uso exclusivo na maquina KREDIT                  ');
+   writeln('                 Para uso exclusivo na máquina KREDIT                  ');
    writeln('');
    writeln('Como usar:');
    writeln('Digite o valor do procedimento (somente números)');
