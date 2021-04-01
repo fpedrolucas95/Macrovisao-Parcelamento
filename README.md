@@ -10,7 +10,7 @@ Como usar?
 <p>
 Ao abrir o programa, uma janela do terminal se abrirá.
 <p>
-Insira o valor do procedimento a ser contratado.
+Insira o valor do procedimento a ser contratado sem caracteres especiais, caso seja necessário informar centavos, utilize o ponto no lugar da vírgula.
 <p>
 Na linha seguinte, você deverá escolher se o pagamento será no cartão de crédito ou débito, para isso, digite 1 para crédito ou 2 para débito.
 <p>
