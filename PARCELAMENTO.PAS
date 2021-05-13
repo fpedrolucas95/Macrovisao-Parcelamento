@@ -1,5 +1,5 @@
 program Parcelamento;
-// { Versão : 1.05c}
+// { Versão : 1.06a}
 // { Data atual  : 31/03/2021}
 
 uses
@@ -13,7 +13,7 @@ begin
   repeat
     writeln('----------------------------- Hospital de Olhos Macrovisão -----------------------------');
     writeln('');
-    writeln('                  Sistema automático de calculo de juros, versão 1.05c');
+    writeln('                  Sistema automático de calculo de juros, versão 1.06a');
     writeln('                         Para uso exclusivo na máquina KREDIT');
     writeln('');
     writeln('Como usar:');
