@@ -1,6 +1,6 @@
 program Parcelamento;
-// { Versão : 1.06b}
-// { Data atual  : 31/03/2021}
+// { Versão : 1.06c}
+// { Data atual  : 17/05/2021}
 
 uses
   Crt;
@@ -9,11 +9,13 @@ var
   valor, parcela, total, prazo, adicional, livre: real;
   forma, novo: integer;
 
+{$R *.res}
+
 begin
   repeat
     writeln('----------------------------- Hospital de Olhos Macrovisão -----------------------------');
     writeln('');
-    writeln('                  Sistema automático de calculo de juros, versão 1.06b');
+    writeln('                  Sistema automático de calculo de juros, versão 1.06c');
     writeln('                         Para uso exclusivo na máquina KREDIT');
     writeln('');
     writeln('Como usar:');
@@ -26,10 +28,18 @@ begin
     readln(valor);
     Write('Esse pagamento será no crédito ou débito? (1-cred, 2-deb): ');
     readln(forma);
+    if (forma >= 3) then
+    begin
+      Writeln('Valor incorreto, tente novamente seguindo as instruções acima.');
+    end;
     if (forma = 1) then
     begin
       Write('Digite a quantidade de parcelas (1-18): ');
       readln(parcela);
+      if (parcela >= 19) then
+      begin
+        Writeln('Número de parcelas inválido, por favor, insira um valor entre 1 e 18x');
+      end;
       if (parcela = 1) then
       begin
         total := valor + (valor * 0.0260);
