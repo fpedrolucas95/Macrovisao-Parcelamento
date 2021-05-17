@@ -28,7 +28,8 @@ begin
     writeln('Será exibido o valor total a ser cobrado, bem como número de parcelas e taxa de juros');
     writeln('Na máquina:');
     writeln('Digite na máquina o valor exibido em tela como resultado da simulação,');
-    writeln('Selecione "Parcelamento Vendedor", e escolha o número de parcelas para o qual fez o cálculo,');
+    writeln('Escolha entre débito ou crédito, para crédito, selecione "Parcelamento Vendedor"');
+    writeln('Caso escolha crédito, selecione o número de parcelas para o qual fez o cálculo,');
     writeln('Insira o cartão quando solicitado, e peça ao cliente que digite a senha.');
     writeln('');
     writeln('OBS: Em algumas bandeiras, opções de parcelamento acima de 12x estão indisponíveis.');
