@@ -23,8 +23,7 @@ begin
     writeln('');
     writeln('No computador:');
     writeln('Digite o valor do procedimento (somente números, caso tenha centavos, utilize ponto)');
-    writeln('Selecione crédito ou débito');
-    writeln('Caso escolha crédito, digite a quantidade de parcelas');
+    writeln('Selecione entre crédito ou débito, caso escolha crédito, digite a quantidade de parcelas');
     writeln('Será exibido o valor total a ser cobrado, bem como número de parcelas e taxa de juros');
     writeln('Na máquina:');
     writeln('Digite na máquina o valor exibido em tela como resultado da simulação,');
