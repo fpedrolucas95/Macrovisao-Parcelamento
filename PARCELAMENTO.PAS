@@ -1,5 +1,5 @@
 program Parcelamento;
-// { Versão : 1.06c}
+// { Versão : 1.06.1}
 // { Data atual  : 17/05/2021}
 
 uses
@@ -13,16 +13,25 @@ var
 
 begin
   repeat
-    writeln('----------------------------- Hospital de Olhos Macrovisão -----------------------------');
+    writeln('---------------------------------- Hospital de Olhos Macrovisão ----------------------------------');
     writeln('');
-    writeln('                  Sistema automático de calculo de juros, versão 1.06c');
-    writeln('                         Para uso exclusivo na máquina KREDIT');
+    writeln('                       Sistema automático de calculo de juros, versão 1.06.1');
+    writeln('                              Para uso exclusivo na máquina KREDIT');
+    writeln('');
     writeln('');
     writeln('Como usar:');
-    writeln('Digite o valor do procedimento (somente números)');
+    writeln('');
+    writeln('No computador:');
+    writeln('Digite o valor do procedimento (somente números, caso tenha centavos, utilize ponto)');
     writeln('Selecione crédito ou débito');
     writeln('Caso escolha crédito, digite a quantidade de parcelas');
-    writeln('Faça a cobrança na máquina do valor exibido em tela');
+    writeln('Será exibido o valor total a ser cobrado, bem como número de parcelas e taxa de juros');
+    writeln('Na máquina:');
+    writeln('Digite na máquina o valor exibido em tela como resultado da simulação,');
+    writeln('Selecione "Parcelamento Vendedor", e escolha o número de parcelas para o qual fez o cálculo,');
+    writeln('Insira o cartão quando solicitado, e peça ao cliente que digite a senha.');
+    writeln('');
+    writeln('OBS: Em algumas bandeiras, opções de parcelamento acima de 12x estão indisponíveis.');
     writeln('');
     Write('Digite o valor do procedimento: R$ ');
     readln(valor);
