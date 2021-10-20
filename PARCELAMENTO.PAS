@@ -1,6 +1,6 @@
 program Parcelamento;
-// { Versão : 1.06.1}
-// { Data atual  : 17/05/2021}
+// { Versão : 1.06.2}
+// { Data atual  : 20/10/2021}
 
 uses
   Crt;
@@ -13,9 +13,9 @@ var
 
 begin
   repeat
-    writeln('---------------------------------- Hospital de Olhos Macrovisão ----------------------------------');
+    writeln('---------------------------------------- Ana Lobbo Estética ---------------------------------------');
     writeln('');
-    writeln('                       Sistema automático de calculo de juros, versão 1.06.1');
+    writeln('                       Sistema automático de calculo de juros, versão 1.06.2');
     writeln('                              Para uso exclusivo na máquina KREDIT');
     writeln('');
     writeln('');
@@ -69,24 +69,6 @@ begin
       end;
       if (parcela = 2) then
       begin
-        total := valor + (valor * 0.0390);
-        prazo := total / parcela;
-        adicional := valor * 0.0390;
-        livre := total - adicional;
-        Write('O valor a ser pago é R$ ');
-        Write(total: 4: 2);
-        Write(' no crédito a prazo em ');
-        Write(parcela: 2: 0);
-        Write('x de R$ ');
-        writeln(prazo: 4: 2);
-        Write('A taxa de juros desta transação é de 3.90% (R$ ');
-        Write(adicional: 4: 2);
-        Write(') e o valor líquido será R$ ');
-        Write(livre: 4: 2);
-        writeln('');
-      end;
-      if (parcela = 3) then
-      begin
         total := valor + (valor * 0.0425);
         prazo := total / parcela;
         adicional := valor * 0.0425;
@@ -103,11 +85,11 @@ begin
         Write(livre: 4: 2);
         writeln('');
       end;
-      if (parcela = 4) then
+      if (parcela = 3) then
       begin
-        total := valor + (valor * 0.0504);
+        total := valor + (valor * 0.0480);
         prazo := total / parcela;
-        adicional := valor * 0.0504;
+        adicional := valor * 0.0480;
         livre := total - adicional;
         Write('O valor a ser pago é R$ ');
         Write(total: 4: 2);
@@ -115,7 +97,25 @@ begin
         Write(parcela: 2: 0);
         Write('x de R$ ');
         writeln(prazo: 4: 2);
-        Write('A taxa de juros desta transação é de 5.04% (R$ ');
+        Write('A taxa de juros desta transação é de 4.80% (R$ ');
+        Write(adicional: 4: 2);
+        Write(') e o valor líquido será R$ ');
+        Write(livre: 4: 2);
+        writeln('');
+      end;
+      if (parcela = 4) then
+      begin
+        total := valor + (valor * 0.0565);
+        prazo := total / parcela;
+        adicional := valor * 0.0565;
+        livre := total - adicional;
+        Write('O valor a ser pago é R$ ');
+        Write(total: 4: 2);
+        Write(' no crédito a prazo em ');
+        Write(parcela: 2: 0);
+        Write('x de R$ ');
+        writeln(prazo: 4: 2);
+        Write('A taxa de juros desta transação é de 5.65% (R$ ');
         Write(adicional: 4: 2);
         Write(') e o valor líquido será R$ ');
         Write(livre: 4: 2);
@@ -123,9 +123,9 @@ begin
       end;
       if (parcela = 5) then
       begin
-        total := valor + (valor * 0.0525);
+        total := valor + (valor * 0.0515);
         prazo := total / parcela;
-        adicional := valor * 0.0525;
+        adicional := valor * 0.0515;
         livre := total - adicional;
         Write('O valor a ser pago é R$ ');
         Write(total: 4: 2);
@@ -133,7 +133,7 @@ begin
         Write(parcela: 2: 0);
         Write('x de R$ ');
         writeln(prazo: 4: 2);
-        Write('A taxa de juros desta transação é de 5.25% (R$ ');
+        Write('A taxa de juros desta transação é de 5.15% (R$ ');
         Write(adicional: 4: 2);
         Write(') e o valor líquido será R$ ');
         Write(livre: 4: 2);
@@ -141,9 +141,9 @@ begin
       end;
       if (parcela = 6) then
       begin
-        total := valor + (valor * 0.0557);
+        total := valor + (valor * 0.0660);
         prazo := total / parcela;
-        adicional := valor * 0.0557;
+        adicional := valor * 0.0660;
         livre := total - adicional;
         Write('O valor a ser pago é R$ ');
         Write(total: 4: 2);
@@ -151,7 +151,7 @@ begin
         Write(parcela: 2: 0);
         Write('x de R$ ');
         writeln(prazo: 4: 2);
-        Write('A taxa de juros desta transação é de 5.57% (R$ ');
+        Write('A taxa de juros desta transação é de 6.60% (R$ ');
         Write(adicional: 4: 2);
         Write(') e o valor líquido será R$ ');
         Write(livre: 4: 2);
@@ -213,9 +213,9 @@ begin
       end;
       if (parcela = 10) then
       begin
-        total := valor + (valor * 0.0812);
+        total := valor + (valor * 0.0811);
         prazo := total / parcela;
-        adicional := valor * 0.0812;
+        adicional := valor * 0.0811;
         livre := total - adicional;
         Write('O valor a ser pago é R$ ');
         Write(total: 4: 2);
@@ -223,7 +223,7 @@ begin
         Write(parcela: 2: 0);
         Write('x de R$ ');
         writeln(prazo: 4: 2);
-        Write('A taxa de juros desta transação é de 8.12% (R$ ');
+        Write('A taxa de juros desta transação é de 8.11% (R$ ');
         Write(adicional: 4: 2);
         Write(') e o valor líquido será R$ ');
         Write(livre: 4: 2);
@@ -231,9 +231,9 @@ begin
       end;
       if (parcela = 11) then
       begin
-        total := valor + (valor * 0.0870);
+        total := valor + (valor * 0.0869);
         prazo := total / parcela;
-        adicional := valor * 0.0870;
+        adicional := valor * 0.0869;
         livre := total - adicional;
         Write('O valor a ser pago é R$ ');
         Write(total: 4: 2);
@@ -241,7 +241,7 @@ begin
         Write(parcela: 2: 0);
         Write('x de R$ ');
         writeln(prazo: 4: 2);
-        Write('A taxa de juros desta transação é de 8.70% (R$ ');
+        Write('A taxa de juros desta transação é de 8.69% (R$ ');
         Write(adicional: 4: 2);
         Write(') e o valor líquido será R$ ');
         Write(livre: 4: 2);
@@ -321,9 +321,9 @@ begin
       end;
       if (parcela = 16) then
       begin
-        total := valor + (valor * 0.1282);
+        total := valor + (valor * 0.1092);
         prazo := total / parcela;
-        adicional := valor * 0.1282;
+        adicional := valor * 0.1092;
         livre := total - adicional;
         Write('O valor a ser pago é R$ ');
         Write(total: 4: 2);
@@ -331,7 +331,7 @@ begin
         Write(parcela: 2: 0);
         Write('x de R$ ');
         writeln(prazo: 4: 2);
-        Write('A taxa de juros desta transação é de 12.82% (R$ ');
+        Write('A taxa de juros desta transação é de 10.92% (R$ ');
         Write(adicional: 4: 2);
         Write(') e o valor líquido será R$ ');
         Write(livre: 4: 2);
@@ -357,9 +357,9 @@ begin
       end;
       if (parcela = 18) then
       begin
-        total := valor + (valor * 0.1419);
+        total := valor + (valor * 0.1415);
         prazo := total / parcela;
-        adicional := valor * 0.1419;
+        adicional := valor * 0.1415;
         livre := total - adicional;
         Write('O valor a ser pago é R$ ');
         Write(total: 4: 2);
@@ -367,7 +367,7 @@ begin
         Write(parcela: 2: 0);
         Write('x de R$ ');
         writeln(prazo: 4: 2);
-        Write('A taxa de juros desta transação é de 14.19% (R$ ');
+        Write('A taxa de juros desta transação é de 14.15% (R$ ');
         Write(adicional: 4: 2);
         Write(') e o valor líquido será R$ ');
         Write(livre: 4: 2);
