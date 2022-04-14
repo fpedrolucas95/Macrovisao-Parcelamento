@@ -1,6 +1,6 @@
 program Parcelamento;
-// { Versão : 1.06.1}
-// { Data atual  : 17/05/2021}
+// { Versão : 1.06.3}
+// { Data atual  : 14/04/2022}
 
 uses
   Crt;
