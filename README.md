@@ -8,8 +8,6 @@ Este sistema de cálculo de juros foi criado para ser usado exclusivamente na m�
   <li>O cálculo do valor total a ser pago, do valor da parcela, da taxa de juros adicional e do valor líquido foi simplificado, utilizando as constantes e a array de reais criadas para armazenar as taxas de juros e o número máximo de parcelas permitidas. Dessa forma, o código fica mais curto e mais fácil de entender.</li>
   <li>O programa exibe agora o número máximo de parcelas permitidas na mensagem de instrução para o usuário, de acordo com o valor da constante "MAX_PARCELAS".</li>
   <li>O programa exibe agora uma mensagem de erro caso o usuário escolha um número de parcelas inválido.</li>
-  <li>A versão do programa e a data atual foram atualizadas.</li>
-
   <li>O código foi padronizado, com a adição de espaços em branco e de comentários para facilitar a leitura e a compreensão do código.</li>
 </ul>
 <h2>Como utilizar</h2>
