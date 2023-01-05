@@ -1,5 +1,5 @@
 program Parcelamento;
-// { Versão : 1.10.0}
+// { Versão : 1.10.1}
 // { Data atual  : 05/01/2023}
 
 uses
@@ -17,30 +17,19 @@ var
 
 begin
   repeat
-    writeln('---------------------------------- Hospital de Olhos Macrovisão ----------------------------------');
-    writeln('');
-    writeln('                       Sistema automático de calculo de juros, versão 1.10.0');
-    writeln('                              Para uso exclusivo na máquina KREDIT');
-    writeln('');
-    writeln('');
-    writeln('Como usar:');
-    writeln('');
-    writeln('No computador:');
-    writeln('Digite o valor do procedimento (somente números, caso tenha centavos, utilize ponto)');
-    writeln('Selecione entre crédito ou débito, caso escolha crédito, digite a quantidade de parcelas');
-    writeln('Será exibido o valor total a ser cobrado, bem como número de parcelas e taxa de juros');
-    writeln('Na máquina:');
-    writeln('Digite na máquina o valor exibido em tela como resultado da simulação,');
-    writeln('Escolha entre débito ou crédito, para crédito, selecione "Parcelamento Vendedor"');
-    writeln('Caso escolha crédito, selecione o número de parcelas para o qual fez o cálculo,');
-    writeln('Insira o cartão quando solicitado, e peça ao cliente que digite a senha.');
-    writeln('');
-    writeln('OBS: Em algumas bandeiras, opções de parcelamento acima de 12x estão indisponíveis.');
-    writeln('');
-    Write('Digite o valor do procedimento: R$ ');
-    readln(valor);
-    Write('Esse pagamento será no crédito ou débito? (1-cred, 2-deb): ');
-    readln(forma);
+ writeln('------------------------------------------------ Hospital de Olhos Macrovisão ------------------------------------------------');
+writeln('');
+writeln('Bem-vindo ao Hospital de Olhos Macrovisão! Este é o sistema automático de cálculo de juros, versão 1.10.1, exclusivo para uso na máquina KREDIT.');
+writeln('Para utilizar, primeiro digite o valor do procedimento (somente números, usando ponto para centavos). Em seguida, escolha entre crédito ou débito.');
+writeln('Se escolher crédito, digite também a quantidade de parcelas. O sistema exibirá o valor total a ser cobrado, o número de parcelas e a taxa de juros.');
+writeln('Na máquina, digite o valor exibido pelo sistema, escolha entre débito ou crédito (selecionando "Parcelamento Vendedor" para crédito),');
+writeln('e selecione o número de parcelas escolhido no cálculo. Peça ao cliente que insira o cartão e digite a senha quando solicitado.');
+writeln('Observe que algumas bandeiras podem não oferecer opções de parcelamento acima de 12x.');
+writeln('');
+Write('Digite o valor do procedimento: R$ ');
+readln(valor);
+Write('Este pagamento será no crédito ou débito? (Digite 1 para crédito ou 2 para débito): ');
+readln(forma);
 if (forma = 1) then
 begin
   Write('Digite a quantidade de parcelas (1-', MAX_PARCELAS, '): ');
