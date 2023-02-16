@@ -1,31 +1,26 @@
-<h1>Macrovisão Parcelamento</h1>
-Este sistema de cálculo de juros foi criado para ser usado exclusivamente na máquina KREDIT do Hospital de Olhos Macrovisão. A última atualização foi realizada em 05/01/2023, sendo a versão 1.10.0. Ele não foi mais utilizado a partir de maio de 2022 e não receberá novas atualizações.
+<h1>Macrovisão - Sistema de Parcelamento, versão 2.0</h1>
+Este sistema de cálculo de juros foi criado originalmente para ser usado exclusivamente na máquina KREDIT do Hospital de Olhos Macrovisão, utilizando a linguagem Pascal. No entanto, como parte de estudos, o sistema foi reescrito utilizando a linguagem Python, implementando melhorias de usabilidade e performance e uma interface gráfica utilizando a biblioteca Tkinter. 
 
-<h2>Novidades e melhorias</h2>
-<li>Foi adicionada uma constante "MAX_PARCELAS" para armazenar o número máximo de parcelas permitidas pelo sistema.</li>
-<li>Foi adicionada uma array de reais "JUROS" para armazenar as taxas de juros correspondentes a cada número de parcelas.</li>
-<li>A seleção da quantidade de parcelas foi simplificada, limitando a opção para o número máximo permitido (definido pela constante "MAX_PARCELAS") e exibindo uma mensagem de erro caso o usuário escolha um número inválido.</li>
-  <li>O cálculo do valor total a ser pago, do valor da parcela, da taxa de juros adicional e do valor líquido foi simplificado, utilizando as constantes e a array de reais criadas para armazenar as taxas de juros e o número máximo de parcelas permitidas. Dessa forma, o código fica mais curto e mais fácil de entender.</li>
-  <li>O programa exibe agora o número máximo de parcelas permitidas na mensagem de instrução para o usuário, de acordo com o valor da constante "MAX_PARCELAS".</li>
-  <li>O programa exibe agora uma mensagem de erro caso o usuário escolha um número de parcelas inválido.</li>
-  <li>O código foi padronizado, com a adição de espaços em branco e de comentários para facilitar a leitura e a compreensão do código.</li>
-</ul>
-<h2>Como utilizar</h2>
-<ol>
-  <li>No computador:
-    <ul>
-      <li>Digite o valor do procedimento (somente números, caso tenha centavos, utilize ponto).</li>
-      <li>Selecione entre crédito ou débito, caso escolha crédito, digite a quantidade de parcelas.</li>
-      <li>Será exibido o valor total a ser cobrado, bem como número de parcelas e taxa de juros.</li>
-    </ul>
-  </li>
-  <li>Na máquina:
-    <ul>
-      <li>Digite na máquina o valor exibido em tela como resultado da simulação.</li>
-      <li>Escolha entre débito ou crédito, para crédito, selecione "Parcelamento Vendedor".</li>
-      <li>Caso escolha crédito, selecione o número de parcelas para o qual fez o cálculo.</li>
-      <li>Insira o cartão quando solicitado, e peça ao cliente que digite a senha.</li>
-    </ul>
-  </li>
-</ol>
-<p>Obs: Em algumas bandeiras, opções de parcelamento acima de 12x estão indisponíveis.</p>
+<h2>Funcionalidades</h2>
+<li>Lê a taxa de juros a partir de um documento de texto no diretório do arquivo</li>
+<li>Permite a seleção da forma de pagamento (crédito ou débito)</li>
+<li>Realiza o cálculo do valor total com juros e valor das parcelas (caso a opção de crédito seja selecionada)</li>
+<li>Exibe o valor total, valor das parcelas, taxa de juros e valor líquido.</li>
+
+<h2>Melhorias</h2>
+O novo programa apresenta várias melhorias em relação ao antigo. Foi reescrito em Python e utiliza a biblioteca Tkinter para criar uma interface gráfica ao usuário, tornando a interação mais amigável e intuitiva. Além disso, a taxa de juros é lida a partir de um arquivo de texto, permitindo que seja atualizada facilmente. Uma mensagem de erro é exibida caso o usuário insira um valor inválido para o número de parcelas. 
+<p>Com essas melhorias, o novo programa se torna mais fácil de usar e mais preciso, fornecendo ao usuário informações importantes e instantâneas para a tomada de decisão.
+
+<h2>Instalação e uso</h2>
+<li>Clone este repositório em sua máquina local
+<li>Certifique-se de que possui o Python 3.x instalado
+<li>Edite o arquivo "juros.txt" para inserir as suas taxas desejadas, mantenha um por linha e com a mesma formatação
+<li>Abra um terminal na pasta do projeto e execute o comando python main.py
+<li>A interface gráfica será exibida e você poderá utilizar o sistema de parcelamento
+  
+<h2>Contribuição</h2>
+<p>Este projeto é de código aberto e qualquer pessoa é bem-vinda para contribuir com correções de erros ou novas funcionalidades. Se você deseja contribuir, basta criar um pull request com suas alterações.</p>
+
+<h2>Desenvolvedores</h2>
+<p>Nome: Pedro Lucas França
+<p>Email: fpedrolucas95@gmail.com
