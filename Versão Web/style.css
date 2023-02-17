@@ -133,6 +133,7 @@ button:hover {
 }
 
 .resultado {
+    height: 130px;
     width: 90%;
     max-width: 400px;
     margin: 20px auto 0;
@@ -179,12 +180,132 @@ footer {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* Media qurgb(162, 241, 215)vos com tela menor que 425px */
-@media (max-width: 425px) {
+@media (max-width: 767px) { 
+    form {
+        width: 90%;
+        height: 350px;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background: var(--secondary-color);
+        border-radius: 5px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
 
-    form,
-    .resultado {
+    css Copy code .nome_empresa {
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 8px;
+        left: 70px;
+        bottom: 28px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    input,
+    select {
         width: 100%;
-        max-width: none;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-family: var(--font-family);
+        font-size: 16px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    input:focus,
+    select:focus {
+        outline: none;
+        box-shadow: 0px 0px 3px 0px var(--primary-color);
+    }
+
+    button {
+        display: block;
+        margin: 0;
+        padding: 8px 16px;
+        background: #005fa3;
+        color: #fff;
+        border: 0;
+        border-radius: 5px;
+        font-family: var(--font-family);
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        position: absolute;
+        right: 20px;
+        bottom: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0.1, 0.1, 0.1, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    button:hover {
+        background-color: #0070d2;
+    }
+
+    .toggle {
+        --width: 40px;
+        --height: calc(var(--width) / 2);
+        --border-radius: calc(var(--height) / 2);
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        left: 20px;
+        bottom: 13px;
+    }
+
+    .toggle__input {
+        display: none;
+    }
+
+    .toggle__fill {
+        position: relative;
+        width: var(--width);
+        height: var(--height);
+        border-radius: var(--border-radius);
+        background: #e7e424;
+        transition: background 0.2s;
+    }
+
+    .toggle__fill::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: var(--height);
+        width: var(--height);
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        border-radius: var(--border-radius);
+        transition: transform 0.2s;
+    }
+
+    .toggle__input:checked~.toggle__fill {
+        background: #950000;
+    }
+
+    .toggle__input:checked~.toggle__fill::after {
+        transform: translateX(var(--height));
+    }
+
+    .resultado {
+        height: 130px;
+        width: 90%;
+        margin: 20px auto 0;
+        padding: 20px;
+        background: var(--secondary-color);
+        border-radius: 5px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    footer {
+        display: none;
     }
 }
