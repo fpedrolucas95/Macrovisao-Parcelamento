@@ -29,7 +29,7 @@ Para utilizar a aplicação, siga os seguintes passos:
   <li>Abra o arquivo index.html em um navegador;</li>
   <li>Preencha o formulário com as informações solicitadas;</li>
   <li>Clique no botão "Calcular";</li>
-  <li>O resultado do cálculo será exibido na tela.</li>
+  <li>O resultado do cálculo será exibido na tela com algumas outras informações úteis para a negociação.</li>
 </ul>
 
 <h2>Como contribuir</h2>
