@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Calculadora de parcelamento para cirurgias oftalmológicas da Macrovisão. Calcule o parcelamento de sua cirurgia com taxas da PagSeguro.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="pt-BR">
     <title>Calculadora de Parcelamento</title>
     <link rel="stylesheet" href="style.css">
-    <!--Adicionar a seguinte meta tag para tornar o site responsivo-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
 </head>
 
 <body>
@@ -17,10 +20,10 @@
             <div class="toggle__fill"></div>
         </label>
         <span id="versao" class="versao">
-            Versão 1.01 <a
+            Versão 1.02 <a
                 href="https://github.com/fpedrolucas95/Macrovisao-Parcelamento/commit/8c3b0ef857fd3ec28dc08174d713b41318d75654">[Notas
                 da versão]</a><br>
-            17 de fevereiro de 2023
+            18 de fevereiro de 2023
         </span>
 
         <span id="nome_empresa" class="nome_empresa">Usaremos as taxas da PagSeguro no cálculo.</span>
@@ -39,12 +42,25 @@
 
         <label for="parcela">Número de Parcelas:</label>
         <input type="number" id="parcela" name="parcela" disabled><br>
+        <i class="fa fa-question-circle icon"></i>
+        <div class="info-box">
+            <p>Alguns cartões não permitem parcelamento acima de 12x, como Nubank, American Express e ELO. Já o Itaucard
+                pode permitir parcelamento acima de 12x se o cliente tiver um bom relacionamento com o banco.</p>
+        </div>
 
         <button type="button" onclick="if (validarFormulario()) calcular_parcelamento()">Calcular</button>
     </form>
 
     <div id="resultado" class="resultado"></div>
     <script src="calculadora.js"></script>
+    <script>
+        const icon = document.querySelector('.icon');
+        const infoBox = document.querySelector('.info-box');
+
+        icon.addEventListener('click', () => {
+            infoBox.style.display = 'block';
+        });
+    </script>
 
     <footer>
         <h4>
