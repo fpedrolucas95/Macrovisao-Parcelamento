@@ -1,3 +1,18 @@
+// Validando se tudo está preenchido corretamente
+function validarFormulario() {
+    const nome = document.getElementById('nome').value;
+    const valor = document.getElementById('valor').value;
+    const formaPagamento = document.getElementById('forma_pagamento').value;
+    const parcela = document.getElementById('parcela').value;
+
+    if (nome === '' || valor === '' || formaPagamento === '' || (formaPagamento === '1' && parcela === '')) {
+        alert('Por favor, preencha todos os campos obrigatórios!');
+        return false;
+    }
+
+    return true;
+}
+
 // Habilitar as parcelas
 function habilitar_parcela() {
     let forma_pagamento = parseInt(document.getElementById("forma_pagamento").value);
@@ -49,9 +64,14 @@ function calcular_parcelamento() {
     if (isNaN(valor)) {
         document.getElementById("resultado").innerHTML = "Valor inválido, por favor, insira um número válido.";
         return;
-    }
-
-    if (forma_pagamento === 1) {
+    };
+    if (forma_pagamento === 2) {
+        const total = valor;
+        document.getElementById("resultado").innerHTML = `
+        <h2>${document.getElementById("nome").value}</h2>
+        <p>A vista, sua cirurgia sairá por <b>R$ ${total.toFixed(2)}</b>. 
+        `;
+    } else if (forma_pagamento === 1) {
         if (parcela <= 0 || parcela > MAX_PARCELAS) {
             document.getElementById("resultado").innerHTML = "Número de parcelas inválido, por favor, insira um valor entre 1 e " + MAX_PARCELAS + "x";
         } else {
@@ -110,7 +130,7 @@ function calcular_parcelamento() {
                 document.getElementById("parcela").disabled = true;
                 let total = valor;
                 document.getElementById("resultado").innerHTML = "O valor a ser cobrado é: R$ " + total.toFixed(2);
-            } 
+            }
 
         }
 
