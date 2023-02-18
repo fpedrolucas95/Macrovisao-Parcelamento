@@ -12,7 +12,6 @@ formulário que o usuário preenche para realizar o cálculo. O formulário tem 
   <li>Número de parcelas: campo para o usuário inserir o número de parcelas desejado;</li>
   <li>Calcular: botão que o usuário clica para calcular o parcelamento.</li>
 </ul>
-<p><b>Obs:</b> Atualmente, a opção débito não está funcionando, correção em breve.</p>
 A aplicação utiliza duas taxas de juros para cálculo: a taxa da PagSeguro e a taxa da REDE. As taxas são armazenadas em
 arquivos de texto que a aplicação lê. O usuário pode escolher qual taxa de juros utilizar clicando no botão "Usar taxas
 da REDE".<br><br>
