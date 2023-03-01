@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description"
@@ -20,15 +21,18 @@
             <div class="toggle__fill"></div>
         </label>
         <span id="versao" class="versao">
-            Versão 1.02 <a
-                href="https://github.com/fpedrolucas95/Macrovisao-Parcelamento/commit/8c3b0ef857fd3ec28dc08174d713b41318d75654">[Notas
+            Versão 1.03 <a
+                href="https://github.com/fpedrolucas95/Macrovisao-Parcelamento/commit/763474c74811aca06f38df4790257c79df6edeed">[Notas
                 da versão]</a><br>
-            18 de fevereiro de 2023
+            01 de março de 2023
         </span>
 
         <span id="nome_empresa" class="nome_empresa">Usaremos as taxas da PagSeguro no cálculo.</span>
         <label for="nome">Paciente:</label>
         <input id="nome" name="nome" required><br>
+        
+        <label for="valor">Procedimento:</label>
+        <input id="cirurgia" name="cirurgia" required><br>
 
         <label for="valor">Valor da cirurgia:</label>
         <input type="number" id="valor" name="valor" required><br>
@@ -49,10 +53,13 @@
         </div>
 
         <button type="button" onclick="if (validarFormulario()) calcular_parcelamento()">Calcular</button>
+        
     </form>
 
     <div id="resultado" class="resultado"></div>
+    <button id="print-icon" alt="Imprimir" onclick="imprimir()"></button>
     <script src="calculadora.js"></script>
+    <script src="imprimir.js"></script>
     <script>
         const icon = document.querySelector('.icon');
         const infoBox = document.querySelector('.info-box');
